@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">homework2_2</string>
+    <string name="segway_rentals">Segway Rentals</string>
+    <string name="experience_the_wonder_of_this_future_advancement_of_transportation_for_a_city_group_tour_starting_at_noon_each_day">Experience the wonder of this future advancement of transportation for a city group tour starting at noon each day</string>
+    <string name="rent_a_segway">RENT A SEGWAY</string>
+    <string name="the_segway_tour_is_only_52_for_an_amazing_2_hour_journey">The segway tour is only $52 for an amazing 2-hour journey</string>
+    <string name="android_placeholder">android_placeholder</string>
+</resources>
