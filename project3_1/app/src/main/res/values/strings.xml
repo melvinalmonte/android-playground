@@ -2,4 +2,6 @@
     <string name="app_name">project3_1</string>
     <string name="catalina_ferry_tickets">Catalina Ferry Tickets</string>
     <string name="a_boat">a boat</string>
+    <string name="compute_cost">COMPUTE COST</string>
+    <string name="number_of_tickets">Number Of Tickets</string>
 </resources>

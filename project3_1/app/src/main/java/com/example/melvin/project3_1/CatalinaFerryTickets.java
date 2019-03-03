@@ -35,11 +35,11 @@ public class CatalinaFerryTickets extends AppCompatActivity{
 
                 if (spin.getSelectedItem().toString().equals("To Catalina Island")){
                     total = ticketAmount * 34;
-                    displayData.setText(Integer.toString(total));
+                    displayData.setText("One Way Trip " + spin.getSelectedItem().toString() + " - $" + Integer.toString(total));
                 }
                 else if (spin.getSelectedItem().toString().equals("To Long Beach")){
                     total = ticketAmount * 18;
-                    displayData.setText(Integer.toString(total));
+                    displayData.setText("One Way Trip " + spin.getSelectedItem().toString() + " - $" + Integer.toString(total));
                 }
 
             }

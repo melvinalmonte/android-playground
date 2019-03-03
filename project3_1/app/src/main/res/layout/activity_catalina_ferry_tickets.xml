@@ -7,14 +7,25 @@
         android:layout_height="match_parent"
         tools:context=".CatalinaFerryTickets" tools:layout_editor_absoluteY="25dp">
 
+
     <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/catalina_ferry_tickets"
-            android:gravity="center"
-            android:textStyle="bold"
-            android:textSize="30dp"
-            android:id="@+id/textView"/>
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/catalina_ferry_tickets"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text=""
+        android:textSize="25sp"
+        android:textStyle="bold" />
 
     <ImageView
             android:layout_width="wrap_content"
@@ -25,23 +36,24 @@
             android:id="@+id/imageView"
             android:src="@drawable/cargoship"
             tools:layout_editor_absoluteY="46dp"
-            android:layout_below="@+id/textView" android:contentDescription="@string/a_boat"/>
+            android:layout_below="@+id/banner" android:contentDescription="@string/a_boat"/>
     <EditText
             android:id="@+id/editInput"
-            android:text="Number Of Tickets"
+            android:hint="@string/number_of_tickets"
             android:inputType="numberDecimal"
             android:layout_width="match_parent"
             android:gravity="center"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/mySpinner"/>
+            android:layout_above="@+id/mySpinner"
+        android:autofillHints="" tools:targetApi="o"/>
     <Spinner
             android:layout_width="match_parent"
             android:layout_height="wrap_content" android:id="@+id/mySpinner"
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="172dp"/>
     <Button
-            android:text="COMPUTE COST"
-            android:textSize="25dp"
+            android:text="@string/compute_cost"
+            android:textSize="25sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/button"
