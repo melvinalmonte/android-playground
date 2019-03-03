@@ -1,10 +1,8 @@
 package com.example.melvin.project3_1;
 
-import android.nfc.Tag;
 import android.support.v7.app.AppCompatActivity;
 import android.text.method.ScrollingMovementMethod;
 import android.os.*;
-import android.util.Log;
 import android.view.*;
 import android.widget.*;
 
@@ -17,6 +15,7 @@ public class CatalinaFerryTickets extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 //      RENDER SPINNER TO DEVICE
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_catalina_ferry_tickets);
         final Spinner spin=findViewById(R.id.mySpinner);
@@ -31,23 +30,21 @@ public class CatalinaFerryTickets extends AppCompatActivity{
             @Override
             public void onClick(View v) {
                 handleData=findViewById(R.id.editInput);
-//                int ticketAmount = Integer.parseInt(handleData.getText().toString());
-//                int total;
-//                if (ferryRoutes[0] == "To Catalina Island"){
-//                    total = ticketAmount * 34;
-//                    displayData.setText(Integer.toString(total));
-//                }
-//                else{
-//                    total = ticketAmount * 18;
-//                    displayData.setText(Integer.toString(total));
-//                }
-                Log.i("DropDown","onClick: ");
+                int ticketAmount = Integer.parseInt(handleData.getText().toString());
+                int total;
+
+                if (spin.getSelectedItem().toString().equals("To Catalina Island")){
+                    total = ticketAmount * 34;
+                    displayData.setText(Integer.toString(total));
+                }
+                else if (spin.getSelectedItem().toString().equals("To Long Beach")){
+                    total = ticketAmount * 18;
+                    displayData.setText(Integer.toString(total));
+                }
 
             }
         });
 
     }
-
-
 
 }
