@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">WeightCalculator</string>
+    <string name="convert_patient_weight">Convert Patient Weight</string>
+    <string name="weight_of_patient">Weight of Patient</string>
+</resources>
