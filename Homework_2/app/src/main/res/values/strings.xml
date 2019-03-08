@@ -1,9 +1,0 @@
-<resources>
-    <string name="app_name">Homework_2</string>
-    <string name="convert_patient_weight">Convert Patient Weight</string>
-    <string name="weight_of_patient">Weight of Patient</string>
-    <string name="convert_pounds_to_kilograms">Convert Pounds to Kilograms</string>
-    <string name="convert_kilograms_to_pounds">Convert Kilograms to Pounds</string>
-    <string name="convert_weight">CONVERT WEIGHT</string>
-    <string name="test">test</string>
-</resources>
