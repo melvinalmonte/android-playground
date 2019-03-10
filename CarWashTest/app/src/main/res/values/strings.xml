@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Car Wash</string>
+    <string name="car_wash_packages">CAR WASH PACKAGES</string>
+    <string name="buy_12_washes_for_a_discount">Buy 12+ washes for a discount</string>
+</resources>

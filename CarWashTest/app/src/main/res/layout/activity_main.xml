@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="@string/car_wash_packages"
+        android:textColor="#FFBF00"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/discountBanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/buy_12_washes_for_a_discount"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_below="@+id/banner"/>
+
+    <EditText
+        android:id="@+id/serviceInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/banner"
+        android:layout_marginTop="40dp"
+        android:autofillHints=""
+        android:gravity="center"
+        android:hint="Enter the Number of Washes"
+        android:inputType="numberDecimal"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/serviceInput"
+        android:layout_marginTop="60dp">
+        <RadioButton
+            android:id="@+id/exteriorWash"
+            android:text="Exterior Only"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/exteriorWithVacuum"
+            android:text="Exterior with Interior Vacuum"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/myBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CALCULATE PACKAGE"
+        android:textSize="25sp"
+        android:layout_below="@id/radioGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        />
+    <ImageView
+        android:id="@+id/friendlyCar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/carwash"
+        android:layout_below="@id/output"/>
+
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#fa0400"
+        android:textSize="25sp"
+        android:layout_marginTop="60dp"
+        android:textStyle="bold"
+        android:layout_below="@id/myBtn"
+        />
+
+
+
+</RelativeLayout>

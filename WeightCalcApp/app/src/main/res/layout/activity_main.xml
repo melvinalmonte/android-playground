@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Convert Patient Weight"
+        android:textColor="#fa0400"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/weightInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/banner"
+        android:layout_marginTop="40dp"
+        android:autofillHints=""
+        android:gravity="center"
+        android:hint="Weight of Patient"
+        android:inputType="numberDecimal"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:id="@+id/radioSelection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weightInput"
+        android:gravity="center"
+        android:layout_marginTop="60dp">
+        <RadioButton
+            android:id="@+id/poundsToKilo"
+            android:text="Convert Pounds to Kilograms"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/kilosToPounds"
+            android:text="Convert Kilograms to Pounds"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/myBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONVERT WEIGHT"
+        android:textSize="25sp"
+        android:layout_below="@id/radioSelection"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        />
+
+    <TextView
+        android:id="@+id/weightOutput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#fa0400"
+        android:textSize="25sp"
+        android:layout_marginTop="60dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/myBtn"
+        />
+
+
+
+</RelativeLayout>
