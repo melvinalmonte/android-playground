@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SoundBoard">
+    <ImageView
+        android:id="@+id/cowImg"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/cow"/>
+
+    <ImageView
+        android:id="@+id/pigImg"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_alignBottom="@id/cowSound"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-250dp"
+        android:paddingLeft="35dp"
+        android:src="@drawable/pig" />
+    <ImageView
+        android:id="@+id/danger"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@drawable/caution"
+        android:layout_toRightOf="@id/pigImg"
+        android:layout_alignBottom="@+id/pigSound"
+        android:onClick="warning"/>
+    <Button
+        android:id="@+id/cowSound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/cowImg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-53dp"
+        android:text="LISTEN TO THE COWS"/>
+    <Button
+        android:id="@+id/pigSound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/pigImg"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="-45dp"
+        android:text="LISTEN TO THE PIGS"/>
+
+
+
+</RelativeLayout>
